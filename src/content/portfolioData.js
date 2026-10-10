@@ -1,4 +1,4 @@
-﻿export const profile = {
+export const profile = {
   image: '/msvdev.jpg',
   fullName: 'Sercan Var',
   role: 'Full Stack Developer',
@@ -52,6 +52,16 @@ export const projectGroups = [
     id: 'opensource',
     titleKey: 'sections.opensource',
     projects: [
+      {
+        name: 'DevSec Status',
+        subtitle: {
+          tr: 'Açık kaynak dünyasındaki programlama dilleri, framework\'ler, kütüphaneler ve veritabanı teknolojilerinin canlı GitHub verilerini sunan bir bilgilendirme platformu. Bu proje, teknolojilerin anlık yıldız sayılarını, toplam depo hacimlerini ve son 30 gündeki ivmelenme verilerini tek ekranda gösterir. Geliştiricilerin trendleri takip etmesi ve popüler teknolojileri kolayca karşılaştırması için tasarlanmıştır.',
+          en: 'An informational platform that provides live GitHub data for programming languages, frameworks, libraries, and database technologies. This project displays real-time star counts, total repository volumes, and 30-day momentum in a single view. It is designed to help developers track trends and easily compare popular technologies.',
+          de: 'Eine Informationsplattform, die Live-GitHub-Daten für Programmiersprachen, Frameworks, Bibliotheken und Datenbanktechnologien bereitstellt. Dieses Projekt zeigt aktuelle Star-Zahlen, das gesamte Repository-Volumen und die 30-Tage-Momentum-Daten in einer einzigen Ansicht. Es wurde entwickelt, um Entwicklern zu helfen, Trends zu verfolgen und beliebte Technologien einfach zu vergleichen.'
+        },
+        url: 'https://devsec-status.vercel.app',
+        icon: '/devsec-logo.png',
+      },
       {
         name: 'Take Action Todo',
         subtitle: {

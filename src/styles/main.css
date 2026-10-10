@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --bg: #000000;
   --text: #e6e6e6;
   --text-muted: #525252;
@@ -493,6 +493,17 @@ a {
   height: 16px;
   margin-bottom: 2px;
 }
+
+body::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  background-image: url("/linkedin-hover.png"), url("/bugcrowd-hover.png");
+}
+
 .footer-wrap {
   display: flex;
   flex-direction: column;
@@ -586,41 +597,6 @@ a {
   }
 }
 
-.link-item.icon-mail:hover .social-icon {
-  background: linear-gradient(
-    45deg,
-    #4285f4 0%,
-    #4285f4 20%,
-    #bb001b 20%,
-    #bb001b 40%,
-    #ea4335 40%,
-    #ea4335 60%,
-    #fbbc05 60%,
-    #fbbc05 80%,
-    #34a853 80%,
-    #34a853 100%
-  );
-}
-.link-item.icon-linkedin:hover .social-icon {
-  background: #0a66c2;
-}
-.link-item.icon-github:hover .social-icon {
-  background: var(--text);
-}
-.link-item.icon-leetcode:hover .social-icon {
-  background: linear-gradient(135deg, #ff9d16 50%, #b4b2b5 50%);
-}
-.link-item.icon-bugcrowd:hover .social-icon {
-  background: #ff6900;
-}
-
-:root[data-theme="light"] .hero-right p {
-  color: #525252;
-}
-:root[data-theme="light"] .hero-right p u {
-  text-decoration-color: #b3b3b3;
-}
-
 :root[data-theme="light"] .hero-right p {
   color: #525252;
 }
@@ -631,9 +607,11 @@ a {
 .link-item.icon-mail:hover .social-icon {
   background: linear-gradient(45deg, #4285f4, #ea4335, #fbbc05, #34a853);
 }
+
 .link-item.icon-github:hover .social-icon {
   background: var(--text);
 }
+
 .link-item.icon-leetcode:hover .social-icon {
   background: linear-gradient(135deg, #ff9d16 50%, #b4b2b5 50%);
 }
@@ -647,6 +625,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .link-item.icon-bugcrowd:hover .social-icon {
   background-color: transparent !important;
   -webkit-mask-image: none !important;
