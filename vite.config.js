@@ -35,8 +35,6 @@ export default defineConfig({
   },
   // PERFORMANCE OPTIMIZATIONS
   build: {
-    target: 'esnext', // Modern tarayıcılar için optimize et
-    minify: 'esbuild', // En hızlı sıkıştırma
     cssCodeSplit: true, // CSS'i parçalara böl
     rollupOptions: {
       output: {
