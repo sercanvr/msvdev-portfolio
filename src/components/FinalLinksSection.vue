@@ -1,4 +1,4 @@
-﻿<script setup>
+<script setup>
 import { computed } from 'vue'
 import { safeExternalUrl } from '../utils/security'
 import { useI18n } from 'vue-i18n'
@@ -36,7 +36,14 @@ const year = computed(() => new Date().getFullYear())
         rel="noopener noreferrer"
         :aria-label="t(link.labelKey)"
       >
-        <div class="social-icon" :style="{ maskImage: 'url(/' + svgMap[link.labelKey] + ')', WebkitMaskImage: 'url(/' + svgMap[link.labelKey] + ')' }"></div>
+        <span
+          class="social-icon social-icon-default"
+          :style="{ maskImage: 'url(/' + svgMap[link.labelKey] + ')', WebkitMaskImage: 'url(/' + svgMap[link.labelKey] + ')' }"
+        ></span>
+        <span
+          class="social-icon social-icon-hover"
+          :style="{ maskImage: 'url(/' + svgMap[link.labelKey] + ')', WebkitMaskImage: 'url(/' + svgMap[link.labelKey] + ')' }"
+        ></span>
       </a>
     </div>
     <div class="copyright">
