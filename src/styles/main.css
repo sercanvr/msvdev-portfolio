@@ -515,8 +515,7 @@ a {
 }
 
 .link-item {
-  position: relative;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -534,29 +533,6 @@ a {
   mask-size: contain;
   mask-repeat: no-repeat;
   mask-position: center;
-}
-
-.social-icon-default {
-  position: relative;
-  z-index: 1;
-  opacity: 1;
-}
-
-.social-icon-hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.link-item:hover .social-icon-default {
-  opacity: 0;
-}
-
-.link-item:hover .social-icon-hover {
-  opacity: 1;
 }
 
 .copyright {
@@ -617,22 +593,18 @@ a {
   text-decoration-color: #b3b3b3;
 }
 
-.link-item.icon-mail .social-icon-hover,
 .link-item.icon-mail:hover .social-icon {
   background: linear-gradient(45deg, #4285f4, #ea4335, #fbbc05, #34a853);
 }
 
-.link-item.icon-github .social-icon-hover,
 .link-item.icon-github:hover .social-icon {
   background: var(--text);
 }
 
-.link-item.icon-leetcode .social-icon-hover,
 .link-item.icon-leetcode:hover .social-icon {
   background: linear-gradient(135deg, #ff9d16 50%, #b4b2b5 50%);
 }
 
-.link-item.icon-linkedin .social-icon-hover,
 .link-item.icon-linkedin:hover .social-icon {
   background-color: transparent !important;
   -webkit-mask-image: none !important;
@@ -643,7 +615,6 @@ a {
   background-repeat: no-repeat;
 }
 
-.link-item.icon-bugcrowd .social-icon-hover,
 .link-item.icon-bugcrowd:hover .social-icon {
   background-color: transparent !important;
   -webkit-mask-image: none !important;

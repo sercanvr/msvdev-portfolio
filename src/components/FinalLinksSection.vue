@@ -1,5 +1,5 @@
 <script setup>
-import { computed } from 'vue'
+import { computed, onMounted } from 'vue'
 import { safeExternalUrl } from '../utils/security'
 import { useI18n } from 'vue-i18n'
 
@@ -22,6 +22,18 @@ const svgMap = {
 }
 
 const year = computed(() => new Date().getFullYear())
+
+onMounted(() => {
+  // Pre-decode hover assets in memory for instantaneous hover with zero jank
+  const hoverImages = ['/linkedin-hover.png', '/bugcrowd-hover.png']
+  hoverImages.forEach((src) => {
+    const img = new Image()
+    img.src = src
+    if (img.decode) {
+      img.decode().catch(() => {})
+    }
+  })
+})
 </script>
 
 <template>
@@ -36,14 +48,10 @@ const year = computed(() => new Date().getFullYear())
         rel="noopener noreferrer"
         :aria-label="t(link.labelKey)"
       >
-        <span
-          class="social-icon social-icon-default"
+        <div
+          class="social-icon"
           :style="{ maskImage: 'url(/' + svgMap[link.labelKey] + ')', WebkitMaskImage: 'url(/' + svgMap[link.labelKey] + ')' }"
-        ></span>
-        <span
-          class="social-icon social-icon-hover"
-          :style="{ maskImage: 'url(/' + svgMap[link.labelKey] + ')', WebkitMaskImage: 'url(/' + svgMap[link.labelKey] + ')' }"
-        ></span>
+        ></div>
       </a>
     </div>
     <div class="copyright">
