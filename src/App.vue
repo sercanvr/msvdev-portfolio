@@ -66,7 +66,7 @@ const currentLangLabel = computed(() => localeOptions.find(o => o.value === loca
     <header class="navbar">
       <div class="nav-container">
         <div class="nav-left">
-          <span class="logo oleo-script-regular" @click="reloadPage">@msvdev</span>
+          <span class="logo oleo-script-regular" @click="reloadPage">msvdev</span>
         </div>
         <div class="nav-right">
           <div class="tooltip-box theme-btn">

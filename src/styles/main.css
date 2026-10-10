@@ -493,6 +493,17 @@ a {
   height: 16px;
   margin-bottom: 2px;
 }
+
+body::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  background-image: url("/linkedin-hover.png"), url("/bugcrowd-hover.png");
+}
+
 .footer-wrap {
   display: flex;
   flex-direction: column;
