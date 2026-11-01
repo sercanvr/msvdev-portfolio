@@ -635,12 +635,7 @@ body::after {
   background-position: center;
   background-repeat: no-repeat;
 }
-.theme-btn .icon-svg {
-  margin-left: -1px;
-}
-.lang-wrapper .icon-btn svg {
-  margin-left: 1px;
-}
+.theme-icon,
 .globe-icon {
   width: 18px;
   height: 18px;
@@ -649,6 +644,9 @@ body::after {
   overflow: visible;
   shape-rendering: geometricPrecision;
   text-rendering: geometricPrecision;
+}
+.lang-wrapper .icon-btn svg {
+  margin-left: 1px;
 }
 :root[data-theme="light"] .lang-dropdown button:hover {
   background-color: #ffdfba;
