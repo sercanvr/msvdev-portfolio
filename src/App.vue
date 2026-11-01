@@ -66,38 +66,67 @@ const currentLangLabel = computed(() => localeOptions.find(o => o.value === loca
     <header class="navbar">
       <div class="nav-container">
         <div class="nav-left">
-          <span class="logo oleo-script-regular" @click="reloadPage">msvdev</span>
+          <span
+            class="logo oleo-script-regular"
+            @click="reloadPage"
+          >msvdev</span>
         </div>
         <div class="nav-right">
           <div class="tooltip-box theme-btn">
             <button
               class="icon-btn"
-              @click="handleThemeToggle"
               :aria-label="t('controls.switchTheme')"
+              @click="handleThemeToggle"
             >
-              <div class="icon-svg" style="mask-image: url(/theme.png); -webkit-mask-image: url(/theme.png);"></div>
+              <div class="icon-svg" />
             </button>
             <div class="tooltip">
-              <div class="triangle"></div>
+              <div class="triangle" />
               {{ t('controls.switchTheme') }}
             </div>
           </div>
 
-          <div class="tooltip-box lang-wrapper" :class="{ 'is-open': isLangDropdownOpen }">
-            <button class="icon-btn" @click="toggleLangDropdown">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="2" y1="12" x2="22" y2="12"></line>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          <div
+            class="tooltip-box lang-wrapper"
+            :class="{ 'is-open': isLangDropdownOpen }"
+          >
+            <button
+              class="icon-btn"
+              @click="toggleLangDropdown"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                />
+                <line
+                  x1="2"
+                  y1="12"
+                  x2="22"
+                  y2="12"
+                />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
               </svg>
               <span class="lang-text">{{ currentLangLabel }}</span>
             </button>
             <div class="tooltip">
-              <div class="triangle"></div>
+              <div class="triangle" />
               {{ t('controls.switchLanguage') }}
             </div>
 
-            <div class="lang-dropdown" :class="{ 'is-open': isLangDropdownOpen }">
+            <div
+              class="lang-dropdown"
+              :class="{ 'is-open': isLangDropdownOpen }"
+            >
               <button
                 v-for="option in localeOptions"
                 :key="option.value"
@@ -119,12 +148,20 @@ const currentLangLabel = computed(() => localeOptions.find(o => o.value === loca
       />
 
       <div class="projects-container">
-        <h2 class="main-section-title">{{ t('sections.projects') }}</h2>
-        <div class="group-section" v-for="group in projectGroups" :key="group.id">
-           <h3 class="group-title">{{ t(group.titleKey) }}</h3>
-           <ProjectsSection
-             :items="group.projects"
-           />
+        <h2 class="main-section-title">
+          {{ t('sections.projects') }}
+        </h2>
+        <div
+          v-for="group in projectGroups"
+          :key="group.id"
+          class="group-section"
+        >
+          <h3 class="group-title">
+            {{ t(group.titleKey) }}
+          </h3>
+          <ProjectsSection
+            :items="group.projects"
+          />
         </div>
       </div>
 

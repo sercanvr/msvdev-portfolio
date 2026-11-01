@@ -218,6 +218,17 @@ a {
   mask-position: center;
 }
 
+.theme-btn .icon-svg {
+  mask-image: url("/theme.png");
+  -webkit-mask-image: url("/theme.png");
+  margin-left: -1px;
+}
+
+.lang-wrapper .icon-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
 .icon-btn:hover .icon-svg {
   background-color: var(--accent);
 }
