@@ -5,7 +5,7 @@ import './styles/main.css'
 
 // Pre-decode footer icons into GPU texture cache immediately on load
 if (typeof window !== 'undefined') {
-  const footerIcons = ['/email.png', '/linkedin.png', '/github.png', '/leetcode.png', '/bugcrowd.png', '/linkedin-hover.png', '/bugcrowd-hover.png']
+  const footerIcons = ['/email.webp', '/linkedin.webp', '/github.webp', '/leetcode.webp', '/bugcrowd.webp', '/linkedin-hover.webp', '/bugcrowd-hover.webp']
   footerIcons.forEach((src) => {
     const img = new Image()
     img.src = src

@@ -1,5 +1,5 @@
 export const profile = {
-  image: '/msvdev.jpg',
+  image: '/msvdev.webp',
   fullName: 'Sercan Var',
   role: 'Full Stack Developer',
   bio: {
@@ -34,7 +34,7 @@ export const projectGroups = [
           de: 'Eine professionelle Elo-Boost-Service-Website, die exklusiv für VeltGG entwickelt wurde. Diese Plattform bietet schnelle, sichere und anonyme Ranking-Dienste für Spieler von League of Legends, Valorant und CS2. Durch die moderne Benutzeroberfläche können Nutzer ihr Spiel einfach auswählen und den gewünschten Service schnell erreichen.'
         },
         url: 'https://veltgg.vercel.app',
-        icon: '/veltgg-logo.png',
+        icon: '/veltgg-logo.webp',
       },
       {
         name: 'AceFit SC',
@@ -44,7 +44,7 @@ export const projectGroups = [
           de: 'Eine moderne Präsentations-Website, die exklusiv für das AceFit Sports Center entwickelt wurde. Dieses Projekt präsentiert die Dienstleistungen, Trainingsprogramme und Einrichtungen des Studios klar und übersichtlich. Das professionelle Design spiegelt die dynamische und vertrauenswürdige Identität der Marke wider.'
         },
         url: 'https://acefitsc.vercel.app',
-        icon: '/acefit-logo.png',
+        icon: '/acefit-logo.webp',
       },
       {
         name: 'The Cup Coffee - QR Menu',
@@ -54,7 +54,7 @@ export const projectGroups = [
           de: 'Eine moderne und kontaktlose digitale QR-Menülösung, die exklusiv für The Cup Coffee entwickelt wurde. Diese Anwendung verbessert die Servicegeschwindigkeit und das Benutzererlebnis, indem sie den Kunden durch einen einfachen QR-Code-Scan sofortigen Zugriff auf die Speisekarte ermöglicht. Das vollständig responsive Design gewährleistet ein nahtloses Surferlebnis auf jedem Gerät.'
         },
         url: 'https://cupcoffee.shop',
-        icon: '/tcc-logo.png',
+        icon: '/tcc-logo.webp',
       }
     ],
   },
@@ -70,7 +70,7 @@ export const projectGroups = [
           de: 'RageTV ist eine minimalistische Plattform, um Live-Esports-Spiele an einem Ort zu verfolgen. Wähle im Menü ein Spiel — CS2, Valorant, PUBG, LoL oder Dota 2 — und schaue den offiziellen Livestream direkt über die offiziellen Twitch- und YouTube-Player. Wenn gerade kein Live-Spiel läuft, wird automatisch das letzte Match angezeigt, sodass der Bildschirm nie leer bleibt.'
         },
         url: 'https://ragetv.vercel.app',
-        icon: '/rtv-logo.png',
+        icon: '/rtv-logo.webp',
       },
       {
         name: 'DevSec Status',
@@ -80,7 +80,7 @@ export const projectGroups = [
           de: 'Eine Informationsplattform, die Live-GitHub-Daten für Programmiersprachen, Frameworks, Bibliotheken und Datenbanktechnologien bereitstellt. Dieses Projekt zeigt aktuelle Star-Zahlen, das gesamte Repository-Volumen und die 30-Tage-Momentum-Daten in einer einzigen Ansicht. Es wurde entwickelt, um Entwicklern zu helfen, Trends zu verfolgen und beliebte Technologien einfach zu vergleichen.'
         },
         url: 'https://devsec-status.vercel.app',
-        icon: '/devsec-logo.png',
+        icon: '/devsec-logo.webp',
       },
       {
         name: 'Take Action Todo',
@@ -90,7 +90,7 @@ export const projectGroups = [
           de: 'Eine minimalistische und moderne To-Do-Listen-Anwendung, die mit Next.js erstellt wurde. Sie ermöglicht es Benutzern, ihre Aufgaben effizient zu verwalten, und bietet durch die direkte Speicherung der Daten im Browser (Local Storage) sofortigen Zugriff. Dieses Projekt bietet eine Aufgabenverwaltungslösung, die eine saubere Benutzeroberfläche mit hoher Leistung kombiniert.'
         },
         url: 'https://take-action-todo.vercel.app',
-        icon: '/ta-logo.png',
+        icon: '/ta-logo.webp',
       },
       {
         name: 'Binance Live Chart',
@@ -100,7 +100,7 @@ export const projectGroups = [
           de: 'Ein Open-Source-Projekt, das Live-Kryptowährungsdaten mithilfe der Binance WebSocket API visualisiert. Dieses Tool ermöglicht es Benutzern, die Preisbewegungen ausgewählter Kryptowährungen auf Echtzeit-Charts zu verfolgen. Es wurde entwickelt, um einen schnellen und zuverlässigen Datenstrom für Händler und Investoren bereitzustellen.'
         },
         url: 'https://binance-live-chart.vercel.app',
-        icon: '/blc-logo.png',
+        icon: '/blc-logo.webp',
       },
     ],
   },

@@ -222,8 +222,8 @@ a {
 }
 
 .theme-btn .icon-svg {
-  mask-image: url("/theme.png");
-  -webkit-mask-image: url("/theme.png");
+  mask-image: url("/theme.webp");
+  -webkit-mask-image: url("/theme.webp");
   mask-size: 92% 92%;
   -webkit-mask-size: 92% 92%;
   margin-left: -1px;
@@ -541,7 +541,7 @@ body::after {
   height: 0;
   overflow: hidden;
   z-index: -1;
-  background-image: url("/linkedin-hover.png"), url("/bugcrowd-hover.png");
+  background-image: url("/linkedin-hover.webp"), url("/bugcrowd-hover.webp");
 }
 
 .footer-wrap {
@@ -587,24 +587,24 @@ body::after {
 }
 
 .link-item.icon-mail .social-icon {
-  -webkit-mask-image: url("/email.png");
-  mask-image: url("/email.png");
+  -webkit-mask-image: url("/email.webp");
+  mask-image: url("/email.webp");
 }
 .link-item.icon-linkedin .social-icon {
-  -webkit-mask-image: url("/linkedin.png");
-  mask-image: url("/linkedin.png");
+  -webkit-mask-image: url("/linkedin.webp");
+  mask-image: url("/linkedin.webp");
 }
 .link-item.icon-github .social-icon {
-  -webkit-mask-image: url("/github.png");
-  mask-image: url("/github.png");
+  -webkit-mask-image: url("/github.webp");
+  mask-image: url("/github.webp");
 }
 .link-item.icon-leetcode .social-icon {
-  -webkit-mask-image: url("/leetcode.png");
-  mask-image: url("/leetcode.png");
+  -webkit-mask-image: url("/leetcode.webp");
+  mask-image: url("/leetcode.webp");
 }
 .link-item.icon-bugcrowd .social-icon {
-  -webkit-mask-image: url("/bugcrowd.png");
-  mask-image: url("/bugcrowd.png");
+  -webkit-mask-image: url("/bugcrowd.webp");
+  mask-image: url("/bugcrowd.webp");
 }
 
 .copyright {
@@ -681,7 +681,7 @@ body::after {
   background-color: transparent !important;
   -webkit-mask-image: none !important;
   mask-image: none !important;
-  background-image: url("/linkedin-hover.png");
+  background-image: url("/linkedin-hover.webp");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -691,7 +691,7 @@ body::after {
   background-color: transparent !important;
   -webkit-mask-image: none !important;
   mask-image: none !important;
-  background-image: url("/bugcrowd-hover.png");
+  background-image: url("/bugcrowd-hover.webp");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -721,7 +721,7 @@ body::after {
   height: 0;
   overflow: hidden;
   z-index: -1;
-  content: url("/email.png") url("/linkedin.png") url("/github.png")
-    url("/leetcode.png") url("/bugcrowd.png") url("/linkedin-hover.png")
-    url("/bugcrowd-hover.png");
+  content: url("/email.webp") url("/linkedin.webp") url("/github.webp")
+    url("/leetcode.webp") url("/bugcrowd.webp") url("/linkedin-hover.webp")
+    url("/bugcrowd-hover.webp");
 }
