@@ -196,8 +196,8 @@ a {
 }
 
 .icon-svg {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   background-color: var(--text);
   -webkit-mask-size: contain;
   -webkit-mask-repeat: no-repeat;
