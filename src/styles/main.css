@@ -177,7 +177,6 @@ a {
   line-height: normal;
   font-size: 20px;
   cursor: pointer;
-  transform: translateY(-2px);
 }
 .nav-left .logo:hover {
   color: var(--accent);
@@ -227,10 +226,6 @@ a {
   mask-size: 92% 92%;
   -webkit-mask-size: 92% 92%;
   margin-left: -1px;
-}
-
-.lang-wrapper .icon-btn {
-  transform: translateY(1px);
 }
 
 .lang-wrapper .icon-btn svg {
@@ -309,7 +304,7 @@ a {
   font-weight: 500;
   font-size: 13.5px;
   text-transform: uppercase;
-  line-height: normal;
+  line-height: 1;
   display: flex;
   align-items: center;
 }
