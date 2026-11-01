@@ -229,9 +229,13 @@ a {
   margin-left: -1px;
 }
 
+.lang-wrapper .icon-btn {
+  transform: translateY(1px);
+}
+
 .lang-wrapper .icon-btn svg {
-  width: 17px;
-  height: 17px;
+  width: 18px;
+  height: 18px;
 }
 
 .icon-btn:hover .icon-svg {
@@ -330,7 +334,9 @@ a {
     0 2px 4px -1px rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.2s ease, visibility 0.2s;
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s;
   z-index: 1000;
 }
 
@@ -471,8 +477,8 @@ a {
 
   .lang-dropdown {
     box-shadow:
-    rgba(32, 32, 32, 0.438) 0px 4px 8px -2px,
-    rgba(63, 63, 63, 0.534) 0px 0px 0px 1px;
+      rgba(32, 32, 32, 0.438) 0px 4px 8px -2px,
+      rgba(63, 63, 63, 0.534) 0px 0px 0px 1px;
   }
 
   .lang-dropdown button.active {
@@ -533,7 +539,7 @@ a {
 }
 
 body::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 0;
@@ -644,10 +650,10 @@ body::after {
     right: 0.7rem;
   }
 
-    .lang-dropdown {
+  .lang-dropdown {
     box-shadow:
-    rgba(32, 32, 32, 0.438) 0px 4px 8px -2px,
-    rgba(63, 63, 63, 0.534) 0px 0px 0px 1px;
+      rgba(32, 32, 32, 0.438) 0px 4px 8px -2px,
+      rgba(63, 63, 63, 0.534) 0px 0px 0px 1px;
   }
 
   .lang-dropdown button.active {
@@ -719,12 +725,7 @@ body::after {
   height: 0;
   overflow: hidden;
   z-index: -1;
-  content:
-    url("/email.png")
-    url("/linkedin.png")
-    url("/github.png")
-    url("/leetcode.png")
-    url("/bugcrowd.png")
-    url("/linkedin-hover.png")
+  content: url("/email.png") url("/linkedin.png") url("/github.png")
+    url("/leetcode.png") url("/bugcrowd.png") url("/linkedin-hover.png")
     url("/bugcrowd-hover.png");
 }
