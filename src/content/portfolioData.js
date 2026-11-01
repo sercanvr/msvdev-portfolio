@@ -26,7 +26,7 @@ export const projectGroups = [
     id: 'freelance',
     titleKey: 'sections.freelance',
     projects: [
-          {
+      {
         name: 'VeltGG - Elo Boosting',
         subtitle: {
           tr: 'VeltGG için özel olarak geliştirilmiş profesyonel bir Elo Boost hizmeti web sitesi. Bu platform, League of Legends, Valorant ve CS2 oyuncularına hızlı, güvenli ve anonim sıralama yükseltme hizmeti sunar. Modern arayüzü sayesinde kullanıcılar istedikleri oyunu seçip hizmete kolayca ulaşabilir.',
@@ -34,7 +34,17 @@ export const projectGroups = [
           de: 'Eine professionelle Elo-Boost-Service-Website, die exklusiv für VeltGG entwickelt wurde. Diese Plattform bietet schnelle, sichere und anonyme Ranking-Dienste für Spieler von League of Legends, Valorant und CS2. Durch die moderne Benutzeroberfläche können Nutzer ihr Spiel einfach auswählen und den gewünschten Service schnell erreichen.'
         },
         url: 'https://veltgg.vercel.app',
-        icon: '/veltgg.png',
+        icon: '/veltgg-logo.png',
+      },
+      {
+        name: 'AceFit SC',
+        subtitle: {
+          tr: 'AceFit Sports Center için özel olarak tasarlanmış modern bir tanıtım web sitesi. Bu proje, spor merkezinin hizmetlerini, antrenman programlarını ve tesislerini ziyaretçilere net bir şekilde sunar. Profesyonel tasarımı ile markanın dinamik ve güvenilir kimliğini yansıtır.',
+          en: 'A modern promotional website designed exclusively for AceFit Sports Center. This project clearly showcases the gym\'s services, training programs, and facilities to visitors. Its professional design reflects the brand\'s dynamic and trustworthy identity.',
+          de: 'Eine moderne Präsentations-Website, die exklusiv für das AceFit Sports Center entwickelt wurde. Dieses Projekt präsentiert die Dienstleistungen, Trainingsprogramme und Einrichtungen des Studios klar und übersichtlich. Das professionelle Design spiegelt die dynamische und vertrauenswürdige Identität der Marke wider.'
+        },
+        url: 'https://acefitsc.vercel.app',
+        icon: '/acefit-logo.png',
       },
       {
         name: 'The Cup Coffee - QR Menu',
@@ -44,7 +54,7 @@ export const projectGroups = [
           de: 'Eine moderne und kontaktlose digitale QR-Menülösung, die exklusiv für The Cup Coffee entwickelt wurde. Diese Anwendung verbessert die Servicegeschwindigkeit und das Benutzererlebnis, indem sie den Kunden durch einen einfachen QR-Code-Scan sofortigen Zugriff auf die Speisekarte ermöglicht. Das vollständig responsive Design gewährleistet ein nahtloses Surferlebnis auf jedem Gerät.'
         },
         url: 'https://cupcoffee.shop',
-        icon: '/tcc.png',
+        icon: '/tcc-logo.png',
       }
     ],
   },
@@ -52,6 +62,16 @@ export const projectGroups = [
     id: 'opensource',
     titleKey: 'sections.opensource',
     projects: [
+      {
+        name: 'RageTV',
+        subtitle: {
+          tr: 'RageTV, espor maçlarını tek bir yerden canlı takip etmek için geliştirilmiş minimalist bir yayın platformudur. Soldaki menüden CS2, Valorant, PUBG, LoL veya Dota 2 seçerek o oyunun resmi Twitch ve YouTube yayınını doğrudan resmi oynatıcı üzerinden izleyebilirsiniz. Canlı yayın yoksa son oynanan maç otomatik olarak gösterilir, böylece ekran hiçbir zaman boş kalmaz.',
+          en: 'RageTV is a minimalist platform built to follow live esports matches in one place. Pick a game from the sidebar — CS2, Valorant, PUBG, LoL, or Dota 2 — and watch the official live stream directly through official Twitch and YouTube players. When no live broadcast is available, the latest match replay is shown automatically, so the screen is never empty.',
+          de: 'RageTV ist eine minimalistische Plattform, um Live-Esports-Spiele an einem Ort zu verfolgen. Wähle im Menü ein Spiel — CS2, Valorant, PUBG, LoL oder Dota 2 — und schaue den offiziellen Livestream direkt über die offiziellen Twitch- und YouTube-Player. Wenn gerade kein Live-Spiel läuft, wird automatisch das letzte Match angezeigt, sodass der Bildschirm nie leer bleibt.'
+        },
+        url: 'https://ragetv.vercel.app',
+        icon: '/rtv-logo.png',
+      },
       {
         name: 'DevSec Status',
         subtitle: {
