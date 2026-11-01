@@ -230,8 +230,8 @@ a {
 }
 
 .lang-wrapper .icon-btn svg {
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
 }
 
 .icon-btn:hover .icon-svg {
@@ -301,9 +301,9 @@ a {
 }
 
 .lang-text {
-  margin-left: 0.1rem;
-  font-weight: 400;
-  font-size: 18px;
+  margin-left: 0.25rem;
+  font-weight: 500;
+  font-size: 13.5px;
   text-transform: uppercase;
   line-height: normal;
   display: flex;
