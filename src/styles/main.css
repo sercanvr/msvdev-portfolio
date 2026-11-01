@@ -286,27 +286,32 @@ a {
 .lang-dropdown {
   position: absolute;
   top: calc(100% + 5px);
-  right: -1.5rem;
-  background: rgb(0, 0, 0);
-  border: 1px solid rgba(136, 136, 136, 0.15);
+  right: 0;
+  background: #0d0d0d;
+  border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 12px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  min-width: 150px;
-  padding: 0.5rem;
-  gap: 0.25rem;
+  min-width: 110px;
+  padding: 4px;
+  gap: 2px;
   box-shadow:
-    rgba(32, 32, 32, 0.25) 0px 4px 8px -2px,
-    rgba(63, 63, 63, 0.08) 0px 0px 0px 1px;
+    rgba(0, 0, 0, 0.5) 0px 10px 25px -5px,
+    rgba(0, 0, 0, 0.3) 0px 4px 6px -2px;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-10px);
+  transform: translateY(-8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
   z-index: 1000;
 }
 
 :root[data-theme="light"] .lang-dropdown {
-  background: rgb(255, 255, 255);
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  box-shadow:
+    rgba(0, 0, 0, 0.08) 0px 10px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 4px 6px -2px;
 }
 
 .lang-dropdown.is-open {
@@ -319,22 +324,28 @@ a {
   background: transparent;
   border: none;
   color: var(--text);
-  padding: 0.65rem 1rem;
+  padding: 0.45rem 0.75rem;
   text-align: center;
   cursor: pointer;
-  font-size: 0.95rem;
-  border-radius: 10px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
-.lang-dropdown button:hover {
-  background-color: var(--accent-selection-bg);
-  color: var(--accent);
+.lang-dropdown button:not(.active):hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
 }
 
 .lang-dropdown button.active {
   color: var(--accent);
-  background-color: var(--accent-selection-bg);
+  background-color: rgba(255, 107, 1, 0.18);
   font-weight: 600;
+}
+
+.lang-dropdown button.active:hover {
+  background-color: rgba(255, 107, 1, 0.25);
+  color: #ff7e24;
 }
 .hero-section {
   display: flex;
@@ -641,11 +652,15 @@ body::after {
 .lang-wrapper .icon-btn svg {
   margin-left: 1px;
 }
-:root[data-theme="light"] .lang-dropdown button:hover {
-  background-color: #ffdfba;
-  color: var(--accent);
+:root[data-theme="light"] .lang-dropdown button:not(.active):hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #000000;
 }
 :root[data-theme="light"] .lang-dropdown button.active {
-  background-color: #ffdfba;
-  color: var(--accent);
+  background-color: #ffeedd;
+  color: var(--accent-hover);
+}
+:root[data-theme="light"] .lang-dropdown button.active:hover {
+  background-color: #ffe3c6;
+  color: #d15600;
 }
