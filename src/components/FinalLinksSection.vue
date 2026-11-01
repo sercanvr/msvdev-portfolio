@@ -43,7 +43,7 @@ const year = computed(() => new Date().getFullYear())
       </a>
     </div>
     <div class="copyright">
-      &copy; {{ year }} @msvdev
+      &copy; {{ year }} msvdev
     </div>
   </footer>
 </template>

@@ -287,7 +287,9 @@ a {
   position: absolute;
   top: calc(100% + 5px);
   right: -1.5rem;
-  background: #0d0d0d;
+  background: var(--nav-bg);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 12px;
   overflow: hidden;
@@ -307,7 +309,7 @@ a {
 }
 
 :root[data-theme="light"] .lang-dropdown {
-  background: #ffffff;
+  background: var(--nav-bg);
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow:
     rgba(32, 32, 32, 0.25) 0px 4px 8px -2px,
@@ -663,4 +665,20 @@ body::after {
 :root[data-theme="light"] .lang-dropdown button.active:hover {
   background-color: #ffe3c6;
   color: #d15600;
+}
+
+body::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content:
+    url("/email.png")
+    url("/linkedin.png")
+    url("/github.png")
+    url("/leetcode.png")
+    url("/bugcrowd.png")
+    url("/linkedin-hover.png")
+    url("/bugcrowd-hover.png");
 }
