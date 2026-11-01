@@ -3,7 +3,7 @@ import { computed } from 'vue'
 import { safeExternalUrl } from '../utils/security'
 import { useI18n } from 'vue-i18n'
 
-const props = defineProps({
+defineProps({
   links: {
     type: Array,
     required: true,
@@ -11,16 +11,6 @@ const props = defineProps({
 })
 
 const { t } = useI18n()
-
-// Use the exact filenames found in public/
-const svgMap = {
-  'links.mail': 'email.png',
-  'links.linkedin': 'linkedin.png',
-  'links.github': 'github.png',
-  'links.leetcode': 'leetcode.png',
-  'links.bugcrowd': 'bugcrowd.png'
-}
-
 const year = computed(() => new Date().getFullYear())
 </script>
 
@@ -36,14 +26,11 @@ const year = computed(() => new Date().getFullYear())
         rel="noopener noreferrer"
         :aria-label="t(link.labelKey)"
       >
-        <div
-          class="social-icon"
-          :style="{ maskImage: 'url(/' + svgMap[link.labelKey] + ')', WebkitMaskImage: 'url(/' + svgMap[link.labelKey] + ')' }"
-        ></div>
+        <div class="social-icon" />
       </a>
     </div>
     <div class="copyright">
-      &copy; {{ year }} @msvdev
+      &copy; {{ year }} msvdev
     </div>
   </footer>
 </template>
