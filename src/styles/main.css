@@ -636,10 +636,19 @@ body::after {
   background-repeat: no-repeat;
 }
 .theme-btn .icon-svg {
-  transform: translateX(-1px);
+  margin-left: -1px;
 }
 .lang-wrapper .icon-btn svg {
-  transform: translateX(1px);
+  margin-left: 1px;
+}
+.globe-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+  flex-shrink: 0;
+  overflow: visible;
+  shape-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
 }
 :root[data-theme="light"] .lang-dropdown button:hover {
   background-color: #ffdfba;
