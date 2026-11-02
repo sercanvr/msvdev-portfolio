@@ -28,12 +28,13 @@ defineProps({
     </div>
 
     <div class="hero-right">
-      <!-- eslint-disable-next-line vue/no-v-html -->
+      <!-- eslint-disable vue/no-v-html -->
       <p
         v-for="line in summaryParagraphs"
         :key="line"
         v-html="line"
       />
+      <!-- eslint-enable vue/no-v-html -->
     </div>
   </section>
 </template>
