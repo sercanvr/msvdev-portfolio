@@ -1,8 +1,11 @@
-﻿import { ref, watch } from 'vue'
+import { ref, watch } from 'vue'
 import { THEME_STORAGE_KEY, resolveInitialTheme } from './theme'
 
 export function useTheme() {
-  const theme = ref('dark')
+  const initialTheme = typeof window !== 'undefined'
+    ? resolveInitialTheme(localStorage.getItem(THEME_STORAGE_KEY))
+    : 'dark'
+  const theme = ref(initialTheme)
 
   document.documentElement.setAttribute('data-theme', theme.value)
 

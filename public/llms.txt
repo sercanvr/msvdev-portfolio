@@ -1,0 +1,21 @@
+# Sercan Var (msvdev) - Portfolio
+
+> Full Stack Developer and Web Security Enthusiast portfolio showcasing modern web applications, open-source projects, and bug bounty research.
+
+## Developer Information
+
+- [Portfolio](https://sercanvr.github.io/msvdev-portfolio): Official developer portfolio
+- [GitHub](https://github.com/sercanvr): Open source projects and source code
+- [LinkedIn](https://www.linkedin.com/in/sercan-var): Professional experience and network
+- [Bugcrowd](https://bugcrowd.com/h/msvdev): Bug bounty hunter profile and vulnerability disclosures
+- [LeetCode](https://leetcode.com/msvdev): Algorithmic solutions and problem solving
+
+## Featured Projects
+
+- [VeltGG](https://veltgg.vercel.app): Professional Elo Boost service website for League of Legends, Valorant, and CS2 players.
+- [AceFit SC](https://acefitsc.vercel.app): Modern promotional website for AceFit Sports Center.
+- [The Cup Coffee](https://cupcoffee.shop): Modern contactless digital QR menu solution for coffee shops.
+- [RageTV](https://ragetv.vercel.app): Minimalist live esports streaming platform for Twitch and YouTube match tracking.
+- [DevSec Status](https://devsec-status.vercel.app): Real-time GitHub tracking dashboard for programming languages, frameworks, and libraries.
+- [Take Action Todo](https://take-action-todo.vercel.app): Minimalist and modern task management web application built with Next.js.
+- [Binance Live Chart](https://binance-live-chart.vercel.app): Real-time cryptocurrency chart visualizer using Binance WebSocket API.

@@ -1,4 +1,4 @@
-﻿<script setup>
+<script setup>
 import { onMounted, onUnmounted, ref } from 'vue'
 
 const isVisible = ref(false)
@@ -24,11 +24,11 @@ onUnmounted(() => {
 <template>
   <button
     v-show="isVisible"
+    aria-label="Scroll Top"
     type="button"
     class="scroll-top"
     @click="jumpToTop"
-    aria-label="Scroll Top"
   >
-    <div class="up-arrow"></div>
+    <div class="up-arrow" />
   </button>
 </template>
