@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Machine-readable AI Agent Discovery
+# https://llmstxt.org
+# https://ard.dev

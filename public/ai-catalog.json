@@ -1,0 +1,30 @@
+{
+  "name": "Sercan Var (msvdev) Portfolio",
+  "description": "Full Stack Developer and Web Security Portfolio showcasing modern web and mobile applications.",
+  "version": "1.0.0",
+  "url": "https://sercanvr.github.io/msvdev-portfolio",
+  "author": {
+    "name": "Sercan Var",
+    "url": "https://github.com/sercanvr"
+  },
+  "capabilities": [
+    "portfolio-display",
+    "project-discovery",
+    "developer-information",
+    "multilingual-support"
+  ],
+  "resources": [
+    {
+      "name": "Portfolio Website",
+      "type": "website",
+      "url": "https://sercanvr.github.io/msvdev-portfolio",
+      "description": "Official interactive developer portfolio."
+    },
+    {
+      "name": "LLM Machine-Readable Guide",
+      "type": "documentation",
+      "url": "/llms.txt",
+      "description": "Machine-readable documentation formatted for LLMs and AI web crawlers."
+    }
+  ]
+}
